@@ -20,7 +20,7 @@ export const Terms = (props: IProps) => {
     }
 
     return (
-        <div className='grid overflow-scroll max-h-[80vh] justify-items-center gap-4 p-2 s:grid-cols-2 m:grid-cols-3 l:grid-cols-4 '>
+        <div className='grid overflow-y-auto overflow-x-hidden max-h-[80vh] justify-items-center gap-4 p-2 s:grid-cols-2 m:grid-cols-3 l:grid-cols-4 '>
 
         {terms.map((item, index) => (
             <Term  Capacity={item.Capacity} OriginalCapacity={item.OriginalCapacity} Time={item.Time} key={index} />
