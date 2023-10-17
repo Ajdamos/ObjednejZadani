@@ -15,7 +15,7 @@ export const DateArrows = (props: IDateArrowsProps) => {
         return  (
         <>
         {width > 600 ? <div onClick={() => HandleDateChangeOnClick(-1)} className='flex justify-center items-center bg-slate-600 cursor-pointer rounded-xl h-full border-2 border-slate-600 w-full select-none m-2 hover:border-amber-600'><h2 className='text-center w-[100px]'>{HandleDateDisplay(-1)}</h2></div>: null}
-        <div onClick={() => HandleDateChangeOnClick(0)} className='flex justify-center items-center bg-gradient-to-br from-amber-600 to-orange-400  cursor-pointer rounded-xl h-full border-2 border-slate-600 select-none w-full m-2'><h2 className='text-center w-[100px]'>{HandleDateDisplay(0)}</h2></div>
+        <div onClick={() => HandleDateChangeOnClick(0)} className='flex justify-center items-center bg-gradient-to-br from-amber-600 to-orange-400  cursor-pointer rounded-xl h-full border-2 border-amber-600 select-none w-full m-2'><h2 className='text-center w-[100px]'>{HandleDateDisplay(0)}</h2></div>
         {width > 430 ? <div onClick={() => HandleDateChangeOnClick(1)} className='flex justify-center items-center bg-slate-600  cursor-pointer rounded-xl h-full border-2 border-slate-600 w-full m-2 select-none hover:border-amber-600'><h2 className='text-center w-[100px]'>{HandleDateDisplay(1)}</h2></div>: null}
         {width > 1050 ? <div onClick={() => HandleDateChangeOnClick(2)} className='flex justify-center items-center bg-slate-600  cursor-pointer rounded-xl h-full border-2 border-slate-600 w-full m-2 select-none hover:border-amber-600'><h2 className='text-center w-[100px]'>{HandleDateDisplay(2)}</h2></div>: null}
         </>
